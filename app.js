@@ -35,13 +35,49 @@ function validateSpecial(valueToValidate) {
 
 function validate(valueToValidate, rule){
   var isValid = false;
-  if (rule == "required") {
+
+  var parts = rule.split('-');
+
+  rule = parts[0];
+  var additional = parts[1];
+
+  if (rule === "required") {
     isValid = validateRequired(valueToValidate);
-  } else if (rule == "numeric")
+  } else if (rule === "numeric") {
+    isValid = validateNumeric(valueToValidate);
+  } else if (rule === "special") {
+    isValid = validateSpecial(valueToValidate);
+  } else if (rule === "minlength") {
+    isValid = validateMinLength(valueToValidate, parseInt(additional));
+  }
   return isValid;
 }
 
 
 $(document).ready(function(){
+
+  var allClassnames, field, isValid;
+
+  $('button').click(function(e){
+
+    e.preventDefault();
+
+    $('form div[class^="rule-"]').each(function(){
+
+      field = $(this);
+      allClassnames = field.get(0).className.split(/\s+/);
+      allClassnames.forEach(function(className){
+        if (className.indexOf("rule-") === 0) {
+          isValid = validate(field.val(), className.replace("rule-", ""));
+          if (isValid === false) {
+            field.closest('div').addClass('error');
+          }
+        }
+      });
+
+
+    });
+
+  });
 
 });

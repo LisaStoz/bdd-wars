@@ -7,14 +7,18 @@
 
   <link rel="stylesheet" type="text/css" href="jasmine-2.0.1/jasmine.css">
 
+  <!-- jasmine lib includes -->
   <script type="text/javascript" src="jasmine-2.0.1/jasmine.js"></script>
   <script type="text/javascript" src="jasmine-2.0.1/jasmine-html.js"></script>
   <script type="text/javascript" src="jasmine-2.0.1/boot.js"></script>
 
-  <!-- include source files here... -->
+  <!-- application files -->
+  <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 
+  <!-- test files -->
   <script type="text/javascript" src="tests.js"></script>
+  <script type="text/javascript" src="e2e.js"></script>
 
 </head>
 
@@ -24,17 +28,17 @@
 
     <form>
 
-      <div class="numeric">
+      <div class="rule-numeric">
         <label>This is a numeric field</label>
-        <input type="text" class="required special"/>
+        <input type="text" />
       </div>
 
-      <div class="required special">
+      <div class="rule-required rule-special">
         <label>This is a required field with special character</label>
-        <input type="text" class="required special"/>
+        <input type="text" />
       </div>
 
-      <div class="minlength-3">
+      <div class="rule-minlength-3">
         <label>This is a field with min length of 3</label>
         <input type="text" class=""/>
       </div>
