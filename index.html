@@ -1,53 +1,23 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-  <title>BDD workshop</title>
+  <head>
+    <title>BDD LabCamp handout</title>
 
-  <link rel="stylesheet" type="text/css" href="app.css">
+    <!-- INCLUDE JASMINE -->
+    <link rel="stylesheet" type="text/css" href="jasmine-2.0.1/jasmine.css">
+    <script type="text/javascript" src="jasmine-2.0.1/jasmine.js"></script>
+    <script type="text/javascript" src="jasmine-2.0.1/jasmine-html.js"></script>
+    <script type="text/javascript" src="jasmine-2.0.1/boot.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="jasmine-2.0.1/jasmine.css">
+    <!-- INCLUDE APPLICATION FILES -->
+    <script type="text/javascript" src="app.js"></script>
 
-  <!-- jasmine lib includes -->
-  <script type="text/javascript" src="jasmine-2.0.1/jasmine.js"></script>
-  <script type="text/javascript" src="jasmine-2.0.1/jasmine-html.js"></script>
-  <script type="text/javascript" src="jasmine-2.0.1/boot.js"></script>
+    <!-- INCLUDE TESTS -->
+    <script type="text/javascript" src="tests.js"></script>
 
-  <!-- application files -->
-  <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+  </head>
 
-  <!-- test files -->
-  <script type="text/javascript" src="tests.js"></script>
-  <script type="text/javascript" src="e2e.js"></script>
+  <body>
+  </body>
 
-</head>
-
-<body>
-
-    <h1>Form validation - example 2</h1>
-
-    <form>
-
-      <div class="rule-numeric">
-        <label>This is a numeric field</label>
-        <input type="text" />
-      </div>
-
-      <div class="rule-required rule-special">
-        <label>This is a required field with special character</label>
-        <input type="text" />
-      </div>
-
-      <div class="rule-minlength-3">
-        <label>This is a field with min length of 3</label>
-        <input type="text" class=""/>
-      </div>
-
-      <div>
-        <button>Validate</button>
-      </div>
-
-    </form>
-
-</body>
 </html>
