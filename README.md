@@ -6,11 +6,17 @@
 4. The Missing Element
 5. Who likes it?
 
-<hr>
-
 ## Greet me
 
-<hr>
+Write a method called `greet` that takes one argument as name and then greets that name, capitalized and ends with an exclamation point.
+
+Examples:
+
+```
+greet("maya") // returns "Hello Maya!"
+greet("JACK") // returns "Hello Jack!"
+```
+
 
 ## Trolls
 
