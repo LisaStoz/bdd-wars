@@ -43,11 +43,9 @@ Rules:
 
 Examples:
 
-You need 0 minutes to cook 0 eggs
-
-You need 5 minutes to cook 3 eggs
-
-You need 10 minutes to cook 9 eggs
+* You need 0 minutes to cook 0 eggs
+* You need 5 minutes to cook 3 eggs
+* You need 10 minutes to cook 9 eggs
 
 
 ## The Missing Element
@@ -58,7 +56,20 @@ Write a function called `getMissingElement` that accepts an array of unique inte
 
 Examples:
 
-In array `[0, 5, 1, 3, 2, 9, 7, 6, 4]` the missing element is `8`
-In `[9, 2, 4, 5, 7, 0, 8, 6, 1]` the missing element is `5`
+* In array `[0, 5, 1, 3, 2, 9, 7, 6, 4]` the missing element is `8`
+* In `[9, 2, 4, 5, 7, 0, 8, 6, 1]` the missing element is `5`
 
 ## Who likes it?
+
+You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
+
+Implement a function called `likes`, which must take in input array, containing the names of people who like an item. It must return the display text as shown in the rules below.
+
+Rules:
+* For an empty array the result is "no one likes this".
+* When only Peter likes an item the result is "Peter likes this".
+* When two people, Jacob and Alex like an item the result is "Jacob and Alex like this"
+* When 3 people, e.g. Max, John and Mark like an item the result is "Max, John and Mark like this"
+* When 4 people, e.g. Alex, Jacob, Mark and Max like this the result is "Alex, Jacob and 2 others like this"
+* For more than 4 names, the number in ‘and 2 others’ simply increases.
+* Each name in the array is treated as a different person, so if 2 elements in the array are the same, you should still treat them as 2 different people.
