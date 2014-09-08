@@ -1,5 +1,8 @@
 # Katas
 
+** Copyright note:
+tasks are taken from Codewars and slightly modified. ** You can find lots fun katas on http://www.codewars.com/!**
+
 1. Greet me
 2. Trolls
 3. Boiled Eggs
