@@ -127,7 +127,21 @@
 					</section>
 
 					<section>
-						<p>Example with VAT [FIXME]<p>
+						<h3>Example</h3>
+						<pre><code class="php">describe("Given 20% VAT rate", function(){
+
+     it("when a product is priced £20,
+		then £4 VAT should be added to its price
+		and its total price should be £24", function(){
+
+					product.setPrice(20);
+					expect(product.getTotalPrice()).toBe(24);
+
+     });
+
+});
+
+</code></pre>
 					</section>
 
 				</section>
@@ -176,15 +190,17 @@
 
 				<section>
 					<section>
-						<h2>Sample Task [FIXME]</h2>
+
+						<h3>Before the end of the registration</h3>
+						<p>&nbsp;</p>
 						<ul>
-							<li>Let’s write some tests</li>
-							<li>Create test suit </li>
-							<li>Watch tests fail </li>
-							<li>App file - write “dirty” implementation</li>
-							<li>Watch test pass</li>
-							<li>Refactor</li>
+							<li>more than 15 days - "Registration opens soon"</li>
+							<li>2-15 days "You have n days left to register"</li>
+							<li>1 day  "You have 1 day left to register"</li>
 						</ul>
+						<p>&nbsp;</p>
+						<p>Once registration is closed - nothing</p>
+
 					</section>
 
 					<section>
