@@ -55,7 +55,7 @@
 				</section>
 
 				<section>
-					<h3>Agenda for today</h3>
+					<h3>Agenda</h3>
 					<ul>
 						<li>TDD/BDD concept</li>
 						<li>Jasmine Basics</li>
@@ -219,17 +219,21 @@
 					</section>
 
 					<section>
-						<h3>Useful Jasmine operations</h3>
+						<h3>Useful Jasmine matchers</h3>
 <pre><code>
 
-	expect(true).toBe(true);
-	expect(false).not.toBe(true);
-	expect(a.foo).toBeDefined();
-	expect(foo).not.toBeNull();
-	expect(["foo", "bar", "baz"]).toContain("bar");
+	expect( actualValue ).toBe( expectedValue );
+	expect( actualValue ).not.toBe( expectedValue );
+	expect( actualValue ).toEqual( expectedValue );
+	expect( actualValue ).toBeDefined();
+	expect( actualValue ).toBeNull();
+	expect( actualValue ).toContain( expectedPartOfValue );
+	expect( actualValue ).toBeGreaterThan( expectedValue );
 
+	// etc...
 
 							</code></pre>
+							<p>Jasmine Docs: <a href="http://jasmine.github.io">jasmine.github.io</a></p>
 					</section>
 				</section>
 
